@@ -1,0 +1,27 @@
+<div id="center" class="main center">
+
+    <div class="container">
+    <!-- Début partie spécifique home page -->
+    <div class="row">
+    <div class="col-xs-12 col-sm-4">
+        <img class="details-img" src="{{post.poster_path}}" />
+    </div>
+    <div class="col-xs-12 col-sm-8">
+        <h2>{{post.title}}</h2>
+        <h3>{{post.overview}}</h3>
+        <p class="meta-wrap">
+        <span class="rating">rating: {{post.vote_average}}</span>
+        <span class="meta">{{post.original_language}} / 148 min. / {{post.release_date}}</span>
+        </p>
+
+        <ul class="genres">
+        <div *ngFor="let genre of post.genres">
+
+            <li>{{genre.name}}</li>
+        </div>
+        </ul>
+    </div>
+    <!-- Fin partie spécifique home page -->
+    </div>
+
+</div>
