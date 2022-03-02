@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MoviesComponent } from './movies/movies.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DetailsComponent } from './details/details.component';
+import { TopbarComponent } from './topbar/topbar.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { DetailsComponent } from './details/details.component';
     MoviesComponent,
     NavbarComponent,
     DetailsComponent,
+    TopbarComponent,
   ],
   imports: [
     BrowserModule,
