@@ -1,11 +1,7 @@
 <div id="sidebarMenu">
     <ul class="sidebarMenuInner">
-      <li><a [routerLink]="['/search/28']">Action</a></li>
-      <li><a [routerLink]="['/search/12']">Adventure</a></li>
-      <li><a [routerLink]="['/search/16']">Animation</a></li>
-      <li><a [routerLink]="['/search/35']">Comedy</a></li>
-      <li><a [routerLink]="['/search/80']">Crime</a></li>
-      <li><a [routerLink]="['/search/Documentary']">Documentary</a></li>
-      <li><a [routerLink]="['/search/18']">Drama</a></li>
+      <li *ngFor="let genre of genres">
+        <a [routerLink]='["/search/" + [genre.id]]'>{{genre.name}}</a>
+    </li>
     </ul>
   </div>
